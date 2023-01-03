@@ -1,10 +1,64 @@
 :root {
     --bg-color: #c3c3c3;
+    --main-color: #263374;
 }
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-size: 16px;
+}
+
+header {
+    background-color: var(--main-color);
+    width: 100%;
+    
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+.nav-link {
+    transition: 0.7s ease;
+}
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
 }
 
 body {
